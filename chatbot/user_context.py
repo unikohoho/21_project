@@ -1,7 +1,7 @@
 import pandas as pd
 
 def load_user_profile(user_id: str):
-    df = pd.read_csv("../data/user_profiles.csv")
+    df = pd.read_csv("data/user_profiles.csv")
     user_info = df[df['user_id'] == user_id].iloc[0]
 
     return {
