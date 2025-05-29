@@ -4,7 +4,6 @@ numpy
 scikit-learn
 
 # 임베딩 및 유사 문서 검색
-langchain
 sentence-transformers
 faiss-cpu
 
@@ -17,3 +16,6 @@ google-cloud-storage
 
 # 기타 유틸 
 tqdm
+
+# 토큰화 및 텍스트 처리
+tiktoken
