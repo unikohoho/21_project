@@ -1,37 +1,36 @@
-# 기본 데이터 처리
+
 pandas
 numpy
 scikit-learn
 
-# 임베딩 및 유사 문서 검색
+
 sentence-transformers
 faiss-cpu
 
-# GPT 호출용 OpenAI 라이브러리
+
 openai
 
-# GCP Vision OCR & Storage
+
 google-cloud-vision
 google-cloud-storage
 
-# 기타 유틸
+
 tqdm
 
-# 토큰화 및 텍스트 처리
+
 tiktoken
 
-# STT
+
 git+https://github.com/openai/whisper.git
 ffmpeg-python
 
-# 화자 분리 관련 라이브러리
+
 pyannote.audio==2.1.1
 torch>=1.13.1
-# torchaudio는 명시하지 않음 — pyannote가 요구하는 버전이 <1.0 이므로 자동 처리되게 함
 transformers>=4.36.2
 librosa>=0.10.0
 huggingface-hub>=0.18.0
 
-# 기타 필수
+
 requests
 fpdf==1.7.2
