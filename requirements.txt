@@ -20,24 +20,25 @@ tqdm
 # 토큰화 및 텍스트 처리
 tiktoken
 
-
 # STT
-openai-whisper==20230314 
-ffmpeg-python            
+git+https://github.com/openai/whisper.git
+ffmpeg-python
 
 # 화자 분리
-pyannote.audio==2.1.1   
-torch>=1.13.1            
-torchaudio>=0.13.1       
-transformers>=4.36.2     
-librosa>=0.10.0          
-huggingface-hub>=0.18.0  
+pyannote.audio==2.1.1
+torch>=1.13.1
+torchaudio>=0.13.1
+transformers>=4.36.2
+librosa>=0.10.0
+huggingface-hub>=0.18.0
 
 # Claude API
-requests                
+requests
+tiktoken
 
 # PDF
-fpdf==1.7.2              
+fpdf==1.7.2
+
 
 
 
