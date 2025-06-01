@@ -8,12 +8,12 @@ from claude_request import build_prompt, request_claude
 from pdf_report import generate_pdf_report
 
 # 사용자 정보 로드
-csv_path = "data/user_profiles.csv"
+csv_path = "../data/user_profiles.csv"
 user_id = "u004"
 user_info = load_user_profile(csv_path, user_id)
 
 # 오디오 파일 경로 
-audio_path = "data/HomeCam_Sample.wav"
+audio_path = "../data/HomeCam_Sample.wav"
 
 # STT + 화자 분리
 segments = run_stt(audio_path)
