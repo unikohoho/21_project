@@ -15,7 +15,7 @@ audio_path = "data/HomeCam_Sample.wav"
 
 # STT + 화자 분리
 segments = run_stt(audio_path)
-HUGGINGFACE_TOKEN = "hf_xxx"  
+HUGGINGFACE_TOKEN = "MY_TOKEN"
 diarization = run_diarization(audio_path, HUGGINGFACE_TOKEN)
 speaker_turns = map_speaker_segments(segments, diarization)
 
@@ -25,7 +25,7 @@ for speaker, text in speaker_turns:
     dialogue += f"{speaker}: {text}\n"
 
 # Claude API 호출
-API_KEY = "sk-xxx" 
+API_KEY = "MY_API" 
 prompt = build_prompt(dialogue, user_info)
 claude_response = request_claude(prompt, API_KEY)
 
