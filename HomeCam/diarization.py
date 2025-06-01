@@ -1,7 +1,7 @@
 from pyannote.audio import Pipeline
 
 
-def load_Huggingface_token_from_file(path="keys/Huggingface_token.txt"):
+def load_Huggingface_token_from_file(path="../keys/Huggingface_token.txt"):
     with open(path, "r") as f:
         return f.read().strip()
         
