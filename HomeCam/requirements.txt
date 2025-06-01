@@ -1,7 +1,6 @@
 # 기본 데이터 처리
 pandas
-numpy
-
+numpy==1.24.4
 
 # GPT 호출용 OpenAI 라이브러리
 openai
