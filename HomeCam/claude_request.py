@@ -34,6 +34,7 @@ def load_claude_key_from_file(path="../keys/claude_key.txt"):
     
 def request_claude(prompt):
     api_key = load_claude_key_from_file()
+    api_url = "https://api.anthropic.com/v1/messages"
     headers = {
         "x-api-key": api_key,
         "anthropic-version": "2023-06-01",
@@ -45,7 +46,7 @@ def request_claude(prompt):
         "messages": [{"role": "user", "content": prompt}]
     }
 
-    response = requests.post("https://api.anthropic.com/v1/messages", headers=headers, json=data)
+    response = requests.post(api_url=api_url, headers=headers, json=data)
     if response.status_code == 200:
         raw = response.json()["content"]
         return "\n\n".join(block["text"] for block in raw if "text" in block).strip() if isinstance(raw, list) else raw.strip()
