@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 import requests
 
+
 def download_font(font_name, url):
     if not os.path.exists(font_name):
         r = requests.get(url)
@@ -13,8 +14,6 @@ def download_font(font_name, url):
         else:
             raise Exception(f"{font_name} 다운로드 실패 (상태 코드: {r.status_code})")
 
-def clean_text(text):
-    return re.sub(r"[^\uAC00-\uD7A3\u3131-\u318E\u1100-\u11FF\u0020-\u007E\n.,?!\"'()\-:]", "", text)
 
 class ReportPDF(FPDF):
     def header(self):
@@ -33,6 +32,11 @@ class ReportPDF(FPDF):
         self.set_font("Nanum", '', 11)
         self.multi_cell(0, 8, body)
         self.ln()
+
+
+def clean_text(text):
+    return re.sub(r"[^\uAC00-\uD7A3\u3131-\u318E\u1100-\u11FF\u0020-\u007E\n.,?!\"'()\-:]", "", text)
+
 
 def generate_pdf_report(output_path, claude_response):
     download_font("NanumGothic.ttf", "https://github.com/google/fonts/raw/main/ofl/nanumgothic/NanumGothic-Regular.ttf")
