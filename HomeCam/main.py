@@ -1,11 +1,11 @@
 import os
 from datetime import datetime
-from HomeCam.load_user import load_user_profile
-from HomeCam.stt import run_stt
-from HomeCam.diarization import run_diarization
-from HomeCam.mapping import map_speaker_segments
-from HomeCam.claude_request import build_prompt, request_claude
-from HomeCam.pdf_report import generate_pdf_report
+from load_user import load_user_profile
+from stt import run_stt
+from diarization import run_diarization
+from mapping import map_speaker_segments
+from claude_request import build_prompt, request_claude
+from pdf_report import generate_pdf_report
 
 # 사용자 정보 로드
 csv_path = "data/user_profiles.csv"
