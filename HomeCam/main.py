@@ -34,11 +34,10 @@ for speaker, text in speaker_turns:
 prompt = build_prompt(dialogue, user_info)
 claude_response = request_claude(prompt)
 
-# PDF 저장
+# PDF
 output_dir = "outputs"
 os.makedirs(output_dir, exist_ok=True)
 filename = f"HomeCam_Emotion_Report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
 output_path = os.path.join(output_dir, filename)
 generate_pdf_report(output_path, claude_response)
-
 print(f"PDF 저장 완료: {output_path}")
