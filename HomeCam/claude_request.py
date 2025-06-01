@@ -1,5 +1,6 @@
 import requests
 
+
 def build_prompt(dialogue, user_info):
     return f"""당신은 초보 부모를 위한 감정 분석 상담 AI입니다.
 
@@ -28,10 +29,13 @@ def build_prompt(dialogue, user_info):
 
 모든 응답은 한국어로, 친절하고 이해하기 쉬운 말투로 작성해 주세요.
 """
+
+
 def load_claude_key_from_file(path="../keys/claude_key.txt"):
     with open(path, "r") as f:
         return f.read().strip()
-    
+
+
 def request_claude(prompt):
     api_key = load_claude_key_from_file()
     api_url = "https://api.anthropic.com/v1/messages"
@@ -45,7 +49,6 @@ def request_claude(prompt):
         "max_tokens": 1000,
         "messages": [{"role": "user", "content": prompt}]
     }
-
     response = requests.post(api_url=api_url, headers=headers, json=data)
     if response.status_code == 200:
         raw = response.json()["content"]
