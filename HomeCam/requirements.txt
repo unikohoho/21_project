@@ -24,7 +24,12 @@ pyannote.core
 pyannote.database
 pyannote.metrics
 pyannote.pipeline
+soundfile==0.10.3.post1
 
 # 오디오 및 신호 처리
-librosa>=0.10.0
+librosa==0.9.2
 transformers>=4.36.2
+
+
+
+
