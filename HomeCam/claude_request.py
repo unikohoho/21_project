@@ -28,7 +28,7 @@ def build_prompt(dialogue, user_info):
 
 모든 응답은 한국어로, 친절하고 이해하기 쉬운 말투로 작성해 주세요.
 """
-def load_claude_key_from_file(path="keys/claude_key.txt"):
+def load_claude_key_from_file(path="../keys/claude_key.txt"):
     with open(path, "r") as f:
         return f.read().strip()
     
