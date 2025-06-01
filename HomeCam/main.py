@@ -26,9 +26,8 @@ for speaker, text in speaker_turns:
     dialogue += f"{speaker}: {text}\n"
 
 # Claude API 호출
-API_KEY = "MY_API" 
 prompt = build_prompt(dialogue, user_info)
-claude_response = request_claude(prompt, API_KEY)
+claude_response = request_claude(prompt)
 
 # PDF 저장
 output_dir = "outputs"
