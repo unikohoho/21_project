@@ -7,6 +7,7 @@ from mapping import map_speaker_segments
 from claude_request import build_prompt, request_claude
 from pdf_report import generate_pdf_report
 
+
 # 사용자 정보 로드
 csv_path = "../data/user_profiles.csv"
 user_id = "u004"
@@ -15,9 +16,13 @@ user_info = load_user_profile(csv_path, user_id)
 # 오디오 파일 경로 
 audio_path = "../data/HomeCam_Sample.wav"
 
-# STT + 화자 분리
+# STT
 segments = run_stt(audio_path)
+
+# 화자 분리
 diarization = run_diarization(audio_path)
+
+# STT + 화자 분리 MAPPING
 speaker_turns = map_speaker_segments(segments, diarization)
 
 # 대화문 정리
@@ -25,7 +30,7 @@ dialogue = ""
 for speaker, text in speaker_turns:
     dialogue += f"{speaker}: {text}\n"
 
-# Claude API 호출
+# Claude API
 prompt = build_prompt(dialogue, user_info)
 claude_response = request_claude(prompt)
 
