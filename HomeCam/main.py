@@ -17,8 +17,7 @@ audio_path = "data/HomeCam_Sample.wav"
 
 # STT + 화자 분리
 segments = run_stt(audio_path)
-HUGGINGFACE_TOKEN = "MY_TOKEN"
-diarization = run_diarization(audio_path, HUGGINGFACE_TOKEN)
+diarization = run_diarization(audio_path)
 speaker_turns = map_speaker_segments(segments, diarization)
 
 # 대화문 정리
