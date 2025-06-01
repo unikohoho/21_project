@@ -49,7 +49,7 @@ def request_claude(prompt):
         "max_tokens": 1000,
         "messages": [{"role": "user", "content": prompt}]
     }
-    response = requests.post(api_url=api_url, headers=headers, json=data)
+    response = requests.post(url=api_url, headers=headers, json=data)
     if response.status_code == 200:
         raw = response.json()["content"]
         return "\n\n".join(block["text"] for block in raw if "text" in block).strip() if isinstance(raw, list) else raw.strip()
