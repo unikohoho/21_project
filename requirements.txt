@@ -4,6 +4,7 @@ numpy==1.24.4
 scikit-learn
 
 # 임베딩 및 유사 문서 검색
+langchain
 sentence-transformers
 faiss-cpu
 
