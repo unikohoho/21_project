@@ -4,6 +4,21 @@ EWHA CAPSTONE TEAM 21 투애니원의 프로젝트 **I\:ON 육아 가이드 서�
 
 ---
 
+## 📂 프로젝트 폴더 구조
+
+```
+21_project/
+├── HomeCam/           # 대화 감정 분석 및 리포트 생성 시스템
+├── chatbot/           # GPT 기반 육아 전문 상담 챗봇
+├── workbook/          # 육아 준비용 워크북
+├── data/              # 샘플 오디오 및 리포트 저장 경로
+├── data_extraction/   # 데이터 전처리용 스크립트
+├── requirements.txt   # 기본 패키지 목록
+└── README.md          # 실행 안내 파일
+```
+
+---
+
 ## 📁 1. 워크북 (workbook)
 
 실행 전 `keys` 폴더를 생성한 후, `openai_key.txt` 파일에 **OpenAI API Key**를 입력합니다.
@@ -16,6 +31,8 @@ EWHA CAPSTONE TEAM 21 투애니원의 프로젝트 **I\:ON 육아 가이드 서�
 ```bash
 python3 workbook/main.py
 ```
+
+> 질문을 수정하고 싶다면 `main.py`의 `question` 변수 값을 수정하면 됩니다.
 
 ---
 
@@ -46,22 +63,11 @@ python3 chatbot/main.py
 **가상환경 설정 및 실행 방법**
 
 ```bash
-# 폴더 이동
 cd "HomeCam FILE"
-
-# 가상 환경 생성
 python -m venv py39_homecam
-
-# 가상 환경 실행
 py39_homecam\Scripts\activate
-
-# pip 업그레이드
 python -m pip install --upgrade pip
-
-# requirements.txt 설치 (HomeCam 폴더 내부)
 pip install -r requirements.txt
-
-# 실행
 python main.py
 ```
 
