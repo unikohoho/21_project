@@ -3,16 +3,14 @@
 -------------------------------------------------------------------------
 
 📁 1. 워크북 (Workbook)
-실행 경로:
-Workbook/main.py
+실행 경로: Workbook/main.py
 
 OpenAI Key 입력 후 실행 가능
 
 -------------------------------------------------------------------------
 
 💬 2. 챗봇 (ChatBot)
-실행 경로:
-ChatBot/main.py 
+실행 경로: ChatBot/main.py 
 
 OpenAI Key 입력 후 실행 가능
 
@@ -23,8 +21,8 @@ OpenAI Key 입력 후 실행 가능
 - 별도의 가상환경 설정 및 패키지 설치가 필요합니다.
 
 실행 경로
-python -m venv py39_homecam #가상 환경 설치
-py39_homecam\Scripts\activate #가상 환경 실행
+python -m venv py39_homecam #가상 환경 설치\n
+py39_homecam\Scripts\activate #가상 환경 실행\N
 python -m pip install --upgrade pip #pip upgrade
 pip install -r requirements.txt #requirements.txt 설치 (HomeCam 내부)
 python main.py
