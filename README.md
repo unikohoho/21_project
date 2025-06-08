@@ -7,7 +7,7 @@
 실행 경로<br>
 workbook/main.py<br>
 
-OpenAI Key 입력 후 실행 가능<br>
+keys 폴더 생성 후  openai_key.txt 파일에 api key 입력 <br>
 
 -------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ OpenAI Key 입력 후 실행 가능<br>
 실행 경로<br>
 chatBot/main.py<br>
 
-OpenAI Key 입력 후 실행 가능<br>
+keys 폴더 생성 후  openai_key.txt 파일에 api key 입력 <br>
 
 -------------------------------------------------------------------------
 
