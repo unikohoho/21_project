@@ -3,16 +3,18 @@
 -------------------------------------------------------------------------
 
 📁 1. 워크북 (Workbook)<br>
-실행 경로: Workbook/main.py<br>
+실행 경로<br>
+Workbook/main.py<br>
 
-OpenAI Key 입력 후 실행 가능<br>
+OpenAI Key 입력 후 실행 가능<br><br>
 
 -------------------------------------------------------------------------
 
 💬 2. 챗봇 (ChatBot)<br>
-실행 경로: ChatBot/main.py<br>
+실행 경로<br>
+ChatBot/main.py<br>
 
-OpenAI Key 입력 후 실행 가능<br>
+OpenAI Key 입력 후 실행 가능<br><br>
 
 -------------------------------------------------------------------------
 
@@ -29,14 +31,14 @@ py39_homecam\Scripts\activate<br>
 python -m pip install --upgrade pip<br>
 #requirements.txt 설치 (HomeCam 내부)<br>
 pip install -r requirements.txt<br>
-python main.py<br>
+python main.py<br><br>
 
 <필수 확인 사항><br>
 1. pip 업그레이드_python -m pip install --upgrade pip<br>
 2. ffmpeg 설치<br>
    https://ffmpeg.org/download.html 에서 플랫폼에 맞게 다운로드<br>
    설치 후 실행파일 경로를 환경변수(PATH) 에 추가하거나, 프로젝트 내에 직접 지정<br>
-3. Python 버전_3.9 사용 권장 (Whisper 및 Pyannote 호환성 이슈 대비)<br>
+3. Python 버전_3.9 사용 권장 (Whisper 및 Pyannote 호환성 이슈 대비)<br><br>
    
 Claude API Key, Hugging Face Token 입력 후 실행 가능<br>
 
