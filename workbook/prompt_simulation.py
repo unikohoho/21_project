@@ -5,7 +5,6 @@ import os
 
 api_key = load_openai_api_key()  # OpenAI API 키 불러오기
 client = OpenAI(api_key = api_key )  # OpenAI API 클라이언트 생성
-# client = OpenAI(api_key = "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")  # OpenAI API 클라이언트 생성
 
 # 유저 정보 CSV 불러오기
 # df_users = pd.read_csv("../data/user_profiles.csv")
