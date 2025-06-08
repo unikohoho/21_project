@@ -2,6 +2,15 @@
 
 EWHA CAPSTONE TEAM 21 투애니원의 프로젝트 I:ON 육아 가이드 서비스입니다.<br>
 
+21_project/ <br>
+├── HomeCam/ # 대화 감정 분석 및 리포트 생성 시스템 <br>
+├── chatbot/ # GPT 기반 육아 전문 상담 챗봇 <br>
+├── workbook/ # 육아 준비용 워크북 <br>
+├── data/ # 샘플 오디오 및 리포트 저장 경로 <br>
+├── data_extraction/ # 데이터 전처리용 스크립트 <br>
+├── requirements.txt # 기본 패키지 목록 <br>
+└── README.md # 실행 안내 파일 <br>
+
 -------------------------------------------------------------------------
 
 📁 1. 워크북 (workbook)<br>
