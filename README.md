@@ -1,4 +1,4 @@
-# 🍼 21\_project
+# 21\_project 👭📚
 
 EWHA CAPSTONE TEAM 21 투애니원의 프로젝트 **I\:ON 육아 가이드 서비스**입니다.
 
