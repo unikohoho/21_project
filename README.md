@@ -9,7 +9,7 @@
 실행 경로<br>
 workbook/main.py<br>
 
-워크북 생성 기능 실행 코드 예시
+워크북 생성 기능 실행 코드 예시<br>
 python3 workbook/main.py<br>
 
 
@@ -22,7 +22,7 @@ python3 workbook/main.py<br>
 실행 경로<br>
 chatbot/main.py<br>
 
-챗봇 응답 실행 코드 예시
+챗봇 응답 실행 코드 예시<br>
 python3 chatbot/main.py<br>
 (챗봇에 입력 할 질문 수정을 위해선 main.py의 question 변수 값을 조정하면 됩니다)<br>
 
