@@ -5,7 +5,7 @@
 📁 1. 워크북 (Workbook)<br>
 
 실행 경로<br>
-Workbook/main.py<br>
+workbook/main.py<br>
 
 OpenAI Key 입력 후 실행 가능<br>
 
@@ -14,7 +14,7 @@ OpenAI Key 입력 후 실행 가능<br>
 💬 2. 챗봇 (ChatBot)<br>
 
 실행 경로<br>
-ChatBot/main.py<br>
+chatBot/main.py<br>
 
 OpenAI Key 입력 후 실행 가능<br>
 
@@ -25,6 +25,8 @@ OpenAI Key 입력 후 실행 가능<br>
 - 별도의 가상환경 설정 및 패키지 설치가 필요합니다.<br>
 
 실행 경로<br>
+#폴더 이동<br>
+cd "HomeCam FILE"<br>
 #가상 환경 설치<br>
 python -m venv py39_homecam<br>
 #가상 환경 실행<br>
