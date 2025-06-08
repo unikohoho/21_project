@@ -29,6 +29,8 @@ python main.py
    https://ffmpeg.org/download.html 에서 플랫폼에 맞게 다운로드
    설치 후 실행파일 경로를 환경변수(PATH) 에 추가하거나, 프로젝트 내에 직접 지정
 3. Python 버전_3.9 사용 권장 (Whisper 및 Pyannote 호환성 이슈 대비)
+
+Claude API Key, Hugging Face Token 입력 후 실행 가능
 -------------------------------------------------------------------------
 
 시연 영상 url: https://youtu.be/Xx3EVTTmDR0
