@@ -2,19 +2,21 @@
 
 -------------------------------------------------------------------------
 
-📁 1. 워크북 (Workbook)<br>
+📁 1. 워크북 (Workbook)<br><br>
+
 실행 경로<br>
 Workbook/main.py<br>
 
-OpenAI Key 입력 후 실행 가능<br><br>
+OpenAI Key 입력 후 실행 가능<br>
 
 -------------------------------------------------------------------------
 
-💬 2. 챗봇 (ChatBot)<br>
+💬 2. 챗봇 (ChatBot)<br><br>
+
 실행 경로<br>
 ChatBot/main.py<br>
 
-OpenAI Key 입력 후 실행 가능<br><br>
+OpenAI Key 입력 후 실행 가능<br>
 
 -------------------------------------------------------------------------
 
@@ -33,7 +35,7 @@ python -m pip install --upgrade pip<br>
 pip install -r requirements.txt<br>
 python main.py<br><br>
 
-<필수 확인 사항><br>
+<필수 확인 사항>
 1. pip 업그레이드_python -m pip install --upgrade pip<br>
 2. ffmpeg 설치<br>
    https://ffmpeg.org/download.html 에서 플랫폼에 맞게 다운로드<br>
