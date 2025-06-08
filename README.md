@@ -41,7 +41,7 @@ python3 chatbot/main.py<br>
 
 🏠 3. 홈캠 대화 분석 시스템 (HomeCam)<br>
 
-실행 전 keys 폴더 생성 후  claude_key.txt, Huggingface_token.txt 파일에 api key, Huggingface token 입력 <br>
+실행 전 keys 폴더 생성 후  claude_key.txt, Huggingface_token.txt 파일에 api key, Huggingface Access token 입력 <br>
 
 - 별도의 가상환경 설정 및 패키지 설치가 필요합니다.<br>
 
